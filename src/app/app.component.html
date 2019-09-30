@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">
+  <button mat-button style="text-align:left" [matMenuTriggerFor]="safariMenu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #safariMenu="matMenu">
+      <button mat-menu-item (click)="goBack()">
+        Dashboard
+      </button>
+      <button mat-menu-item (click)="goCalendar()">
+        Calendar
+      </button>
+      <button mat-menu-item (click)="goAdmission()">
+        Admission
+      </button>
+      <button mat-menu-item (click)="goVisit()">
+        Visit
+      </button>
+      <button mat-menu-item (click)="goAbout()">
+        About
+      </button>
+  </mat-menu>
+  <button mat-button (click)="goBack()"><h1>{{title}}</h1></button>
+    </mat-toolbar>
+<main>
+  <router-outlet></router-outlet>
+</main>
+

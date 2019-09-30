@@ -1,0 +1,16 @@
+<div class="container">
+  <mat-tab-group (selectedTabChange)="onLinkClick($event)">
+    <mat-tab label="General Admission">
+      <app-general-admission></app-general-admission>
+    </mat-tab>
+    <mat-tab label="Parties">
+      <app-group-rates></app-group-rates>
+    </mat-tab>
+    <mat-tab label="Field Trips">
+        <app-field-trips></app-field-trips>
+      </mat-tab>
+    <mat-tab label="Animal services">
+      <app-animal-services></app-animal-services>
+    </mat-tab>
+  </mat-tab-group>
+</div>

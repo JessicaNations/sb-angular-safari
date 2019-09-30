@@ -1,0 +1,68 @@
+<mat-card class="dashboard-card">
+  <mat-card-content>
+    <p><b>Birthday Parties</b></p>
+    <p>
+      Looking for a cool and fun place to have a birthday party?
+    <br/>
+      Big Joel's Safari is the place for a truly unique experience!
+    </p>
+    <p><b>
+        What's included in the Safari Birthday Package
+      </b></p>
+    <ul>
+      <li>Admission for 10 kids and 10 adults.</li>
+      <li>Additional guests must pay the standard park entrance fee.</li>
+      <li>Free admission for the birthday child's guardians and up to four additional family members.</li>
+      <li>Each kid will recieve a small souvenir feed cup with animal feed for the animals.</li>
+      <li>Party guests have private access to the Safari Party Room for 2 hours, with 30 additional minutes for
+        prep-time
+        beforehand.</li>
+      <li>The party room has Safari themed decorations and is climate controlled.</li>
+      <li>Basic cups, plates, napkins, and utensils are provided.</li>
+    </ul>
+  </mat-card-content>
+</mat-card>
+<mat-card>
+  <mat-card-content>
+    <p><b>
+        Party Rules
+      </b></p>
+    <p><b>Guests are encouraged to go over the park's policies before their event.</b></p>
+    <ul>
+      <li>All guests must check-in at the front desk before entering the park.</li>
+      <li>Guests are permitted to bring food and drink into the party room.</li>
+      <li>Alchohol is prohibited.</li>
+      <li>All food and drink must stay in the party room for the safety of the animals.</li>
+      <li>Guests are permitted to bring balloons and other party decorations.</li>
+      <li>Balloons and party favors, such as whistles are to stay in the party room.</li>
+    </ul>
+  </mat-card-content>
+</mat-card>
+<mat-card>
+  <mat-card-content>
+    <p><b>
+        Venue Rental Pricing
+      </b></p>
+    <p><b>$100 deposit is required for all event reservations.</b></p>
+    <p>For parties of 300 or more, contact us at (636) 745-3031 for more information.</p>
+  </mat-card-content>
+</mat-card>
+<mat-card>
+  <mat-card-content>
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 align">
+
+          <ng-container matColumnDef="guests">
+              <th mat-header-cell *matHeaderCellDef><b>Party</b></th>
+              <td mat-cell *matCellDef="let group"> {{group.guests}} <td>
+          </ng-container>
+
+          <ng-container matColumnDef="price">
+              <th mat-header-cell *matHeaderCellDef><b>Price</b></th>
+              <td mat-cell *matCellDef="let group"> {{group.price}} </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+  </mat-card-content>
+</mat-card>
