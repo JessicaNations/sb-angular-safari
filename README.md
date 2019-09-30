@@ -10,13 +10,13 @@
 * Events section like facebook
     * two soonest events
     * click to show details modal
+    * https://stackblitz.com/github/sanjayV/ng-image-slider
 # CALENDAR TODOs
 * https://onthecode.co.uk/angular-material-calendar-component/
-    * On date click show the details in bottom sheet modal
-    * gray-out closed days?
-    * https://developer.android.com/guide/topics/providers/calendar-provider.html
-* calendar month middle swipe like google calendars
-    * https://stackblitz.com/github/sanjayV/ng-image-slider
+* https://developer.android.com/guide/topics/providers/calendar-provider.html
+* Either 
+    * set up loops for the mat cal 
+    * or do a basic ical
 # Hours TODOs
 * Red "Closed" next to today's hours
 # Outside tools
